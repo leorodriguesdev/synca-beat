@@ -1,50 +1,40 @@
-# Welcome to your Expo app 👋
+# Synca Beat 🎧
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo desenvolvido em React Native + Expo, que permite conectar múltiplos dispositivos Bluetooth para reproduzir músicas de forma sincronizada.
 
-## Get started
+## Funcionalidades principais
 
-1. Install dependencies
+- Conexão simultânea a vários dispositivos Bluetooth.
+- Reprodução de música sincronizada em caixas de som e fones.
+- Interface moderna com suporte a tema claro e escuro.
+- Monetização via anúncios (AdMob).
+- Controle de mídia básico (Play, Pause, Stop).
 
-   ```bash
-   npm install
-   ```
+## Tecnologias
 
-2. Start the app
+- React Native + Expo
+- react-native-ble-plx (Bluetooth)
+- Zustand ou Context API (gerenciamento de estado)
+- Tailwind CSS (via nativewind) ou Styled Components
+- react-native-reanimated e gesture-handler (animações)
+- expo-ads-admob (anúncios)
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Rodando o projeto
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+⚠️ Observações importantes
 
-## Learn more
+Projeto criado com npx create-expo-app@latest.
 
-To learn more about developing your project with Expo, look at the following resources:
+Este repositório segue os princípios de Clean Code e Atomic Design para os componentes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+O foco principal é funcionalidade, simplicidade e escalabilidade.
 
-## Join the community
 
-Join our community of developers creating universal apps.
+Licença
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+MIT License

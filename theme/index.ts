@@ -55,27 +55,27 @@ export interface Theme {
   typography: {
     h1: {
       fontSize: number;
-      fontWeight: string;
+      fontWeight: 'bold' | '600' | 'normal' | '100' | '200' | '300' | '400' | '500' | '700' | '800' | '900';
       lineHeight: number;
     };
     h2: {
       fontSize: number;
-      fontWeight: string;
+      fontWeight: 'bold' | '600' | 'normal' | '100' | '200' | '300' | '400' | '500' | '700' | '800' | '900';
       lineHeight: number;
     };
     h3: {
       fontSize: number;
-      fontWeight: string;
+      fontWeight: 'bold' | '600' | 'normal' | '100' | '200' | '300' | '400' | '500' | '700' | '800' | '900';
       lineHeight: number;
     };
     body: {
       fontSize: number;
-      fontWeight: string;
+      fontWeight: 'bold' | '600' | 'normal' | '100' | '200' | '300' | '400' | '500' | '700' | '800' | '900';
       lineHeight: number;
     };
     caption: {
       fontSize: number;
-      fontWeight: string;
+      fontWeight: 'bold' | '600' | 'normal' | '100' | '200' | '300' | '400' | '500' | '700' | '800' | '900';
       lineHeight: number;
     };
   };

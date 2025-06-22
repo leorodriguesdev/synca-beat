@@ -31,7 +31,6 @@ module.exports = {
   testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   moduleNameMapper: {
-    '^react-native$': '<rootDir>/tests/__mocks__/react-native.js',
     '^@/(.*)$': '<rootDir>/$1',
     '^@react-native/js-polyfills/(.*)$': '<rootDir>/tests/__mocks__/emptyMock.js',
     '^@react-native/js-polyfills$': '<rootDir>/tests/__mocks__/emptyMock.js',
@@ -39,7 +38,6 @@ module.exports = {
   testTimeout: 10000,
   verbose: true,
   transformIgnorePatterns: [
-    'node_modules/@react-native/js-polyfills/.*',
     'node_modules/(?!(react-native|@react-native|expo|@expo|@react-navigation|react-native-reanimated|react-native-gesture-handler|react-native-ble-plx|@react-native-async-storage|@react-native-community|react-native-vector-icons)/)',
   ],
   transform: {

@@ -98,4 +98,6 @@ export const useTheme = (): ThemeContextType => {
     throw new Error('useTheme deve ser usado dentro de um ThemeProvider');
   }
   return context;
-}; 
+};
+
+export { ThemeContext };

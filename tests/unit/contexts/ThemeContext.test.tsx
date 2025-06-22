@@ -11,12 +11,9 @@ jest.mock('@react-native-async-storage/async-storage', () => ({
 }));
 
 // Mock do useColorScheme
-jest.mock('react-native', () => ({
-  useColorScheme: jest.fn(() => 'light'),
-  TouchableOpacity: require('react-native').TouchableOpacity,
-  Text: require('react-native').Text,
-  View: require('react-native').View,
-}));
+// jest.mock('react-native', () => ({
+//   useColorScheme: jest.fn(() => 'light'),
+// }));
 
 const mockUseColorScheme = useColorScheme as jest.MockedFunction<typeof useColorScheme>;
 
@@ -47,7 +44,7 @@ const TestComponent = () => {
 describe('ThemeContext', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    mockUseColorScheme.mockReturnValue('light');
+    jest.spyOn(require('react-native'), 'useColorScheme').mockReturnValue('light');
   });
 
   describe('ThemeProvider', () => {
